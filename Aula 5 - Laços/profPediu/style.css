@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80vw;
+    height: 80vh;
+}
+
+.tabuada {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tabuada:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a tabuada */
+    background-color: #e0f7fa; /* Muda a cor de fundo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+
+.tabuada h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.tabuada p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.tabuada:hover h2 {
+    color: #00796b; /* Muda a cor do título ao passar o mouse */
+}
+
+.tabuada p:hover {
+    color: #004d40; /* Muda a cor do texto dos cálculos ao passar o mouse */
+}
